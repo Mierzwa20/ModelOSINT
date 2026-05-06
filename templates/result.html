@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card p-5 text-center mt-5">
+            <h2 class="mb-4">Wynik Ryzyka</h2>
+            
+            <div class="display-1 fw-bold text-{{ color }} mb-3">
+                {{ score }}%
+            </div>
+            
+            <h3 class="text-{{ color }} text-uppercase mb-4">Ryzyko {{ level }}</h3>
+            
+            <div class="alert alert-{{ color }} fs-5">
+                {{ desc }}
+            </div>
+            
+            <div class="mt-5">
+                <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">Przeprowadź audyt ponownie</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
