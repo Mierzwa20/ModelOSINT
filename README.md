@@ -52,3 +52,9 @@ Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cd
 2. Make sure your current working directory is the root of this repository
 3. Run the application: `docker compose up`
 4. Open your browser and navigate to `http://127.0.0.1:5555/`
+
+## CI/CD Pipeline Trigger
+
+In this project, CI/CD is implemented using **GitHub Actions**. The pipeline is triggered by creating a new release following the naming convention `v*`.
+
+**Create new releases ONLY when code is fully tested!**
