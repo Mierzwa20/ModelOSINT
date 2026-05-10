@@ -21,7 +21,7 @@ The app uses a 20-factor proprietary model divided into 5 attack vector categori
 
 The final score is calculated using the following mathematical model:
 
-![Risk Formula](https://marmag0.github.io/endpoints/random/piodo-formula.png)
+<p align="center"><img src="https://marmag0.github.io/endpoints/random/piodo-formula.png" alt="Risk Formula"></p>
 
 ```
 Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cdot W_i)} \right) \cdot 100
