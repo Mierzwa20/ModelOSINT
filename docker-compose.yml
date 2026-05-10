@@ -3,4 +3,6 @@ services:
     build: .
     ports:
       - "5555:5555"
-    command: ["python", "app/app.py"]
+    volumes:
+      - ./app:/app/app
+    command: ["python", "app.py"]

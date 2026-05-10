@@ -9,7 +9,7 @@ def load_database():
     categories = []
     questions_by_category = {}
     
-    with open('app/database.csv', mode='r', encoding='utf-8') as file:
+    with open('database.csv', mode='r', encoding='utf-8') as file:
         reader = csv.DictReader(file)
         for row in reader:
             cat = row['Category']
