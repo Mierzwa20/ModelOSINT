@@ -9,7 +9,7 @@ def load_database():
     categories = []
     questions_by_category = {}
     
-    with open('database.csv', mode='r', encoding='utf-8') as file:
+    with open('app/database.csv', mode='r', encoding='utf-8') as file:
         reader = csv.DictReader(file)
         for row in reader:
             cat = row['Category']
@@ -98,4 +98,4 @@ def result():
     return render_template('result.html', score=risk_percentage, level=level, color=color, desc=desc)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5555, debug=True)

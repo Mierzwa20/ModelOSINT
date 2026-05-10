@@ -1,0 +1,6 @@
+services:
+  python-app:
+    build: .
+    ports:
+      - "5555:5555"
+    command: ["python", "app/app.py"]

@@ -36,9 +36,10 @@ Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cd
 
 ## Setup Instructions
 
-1. Ensure Python is installed on your system: `python3 --version` or `python --version`
-2. Create Python virtual environment: `python3 -m venv .venv`
-3. Activate Python virtual environment: `source .venv/bin/activate`
-4. Install Flask: `pip install -r requirements.txt`
-5. Run the application: `python app.py`
-6. Open your browser and navigate to `http://127.0.0.1:5000/`
+1. Change CWD to ./app: `cd app`
+2. Ensure Python is installed on your system: `python3 --version` or `python --version`
+3. Create Python virtual environment: `python3 -m venv .venv`
+4. Activate Python virtual environment: `source .venv/bin/activate`
+5. Install Flask: `pip install -r requirements.txt`
+6. Run the application: `python app.py`
+7. Open your browser and navigate to `http://127.0.0.1:5555/`
