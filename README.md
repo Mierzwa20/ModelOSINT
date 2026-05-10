@@ -15,7 +15,7 @@ The app uses a 20-factor proprietary model divided into 5 attack vector categori
 ### Scoring System
 
 - **Value (P)**: Each answer maps to a risk scale from `0` (Safe) to `10` (Vulnerable).
-- **Weight (W)**: Multiplier (1 to 4) determining the value of data to an attacker.
+- **Weight (W)**: Multiplier (1 to 4) used to determine the value of data to an attacker.
 
 ### Formula
 
@@ -36,10 +36,19 @@ Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cd
 
 ## Setup Instructions
 
-1. Change CWD to ./app: `cd app`
+### Classic setup
+
+1. Change into the `app` directory: `cd app`
 2. Ensure Python is installed on your system: `python3 --version` or `python --version`
-3. Create Python virtual environment: `python3 -m venv .venv`
+3. Create a Python virtual environment: `python3 -m venv .venv`
 4. Activate Python virtual environment: `source .venv/bin/activate`
 5. Install Flask: `pip install -r requirements.txt`
 6. Run the application: `python app.py`
 7. Open your browser and navigate to `http://127.0.0.1:5555/`
+
+### Docker
+
+1. Ensure Docker is installed on your system: `docker --version`
+2. Make sure your current working directory is the root of this repository
+3. Run the application: `docker compose up`
+4. Open your browser and navigate to `http://127.0.0.1:5555/`
