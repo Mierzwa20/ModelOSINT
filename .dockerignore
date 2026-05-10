@@ -1,0 +1,10 @@
+.git
+.gitignore
+
+README.md
+README
+
+Dockerfile
+.dockerignore
+
+.env
