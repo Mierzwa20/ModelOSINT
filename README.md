@@ -55,6 +55,6 @@ Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cd
 
 ## CI/CD Pipeline Trigger
 
-In this project, CI/CD is implemented using **GitHub Actions**. The pipeline is triggered by creating a new release following the naming convention `v*`.
+In this project, CI/CD is implemented using **GitHub Actions**. The pipeline is triggered by creating a new tag for release, following the naming convention `v*`.
 
 **Create new releases ONLY when code is fully tested!**
