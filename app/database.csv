@@ -1,21 +1,24 @@
 ID,Category,Question,Options,Points,Weight
-1,Media Społecznościowe i Świadomość,Jaka jest domyślna widoczność Twoich głównych profili w sieci?,Prywatne|Tylko znajomi znajomych|W pełni publiczne,0|5|10,4
-2,Media Społecznościowe i Świadomość,Czy publikujesz informacje o swojej lokalizacji w czasie rzeczywistym?,TAK|NIE,10|0,4
-3,Media Społecznościowe i Świadomość,Czy Twoja lista znajomych/kontaktów jest widoczna dla osób spoza tej listy?,TAK|NIE,10|0,2
-4,Media Społecznościowe i Świadomość,Czy kiedykolwiek opublikowałeś zdjęcie dokumentów?,TAK|NIE,10|0,4
-5,Metadane i Ślady Cyfrowe,Czy przed publikacją zdjęć w internecie usuwasz z nich metadane EXIF?,TAK|NIE,0|10,3
-6,Metadane i Ślady Cyfrowe,Jak zazwyczaj podchodzisz do zgód na pliki cookies na nowych stronach?,Odrzucam wszystko|Tylko niezbędne|Akceptuję wszystkie,0|5|10,1
-7,Metadane i Ślady Cyfrowe,Czy masz stale włączoną historię lokalizacji?,TAK|NIE,10|0,3
-8,Metadane i Ślady Cyfrowe,Ile posiadasz cyfrowego złomu (starych kont)?,Brak/Usuwam|Parę|Kilkadziesiąt,0|5|10,3
-9,Identyfikatory i PII,Jak łatwo jest znaleźć Twój główny numer telefonu w sieci?,Niemożliwe|Na podstronach firmowych|Pierwsza strona wyników,0|5|10,4
-10,Identyfikatory i PII,Jak łatwo jest znaleźć Twój prywatny adres e-mail w sieci?,Niemożliwe|Częściowo ukryty|Wszędzie widoczny,0|5|10,3
-11,Identyfikatory i PII,Czy Twój dokładny adres zamieszkania jest możliwy do powiązania z nazwiskiem?,TAK|NIE,10|0,4
-12,Identyfikatory i PII,Czy w sieci wisi Twoje szczegółowe CV?,TAK|NIE,10|0,2
-13,Higiena Cybernetyczna i Wycieki,Czy używasz tego samego hasła w więcej niż jednym serwisie?,Nigdy|Czasami|Zawsze,0|5|10,4
-14,Higiena Cybernetyczna i Wycieki,Czy posiadasz włączone uwierzytelnianie 2FA na najważniejszych kontach?,TAK|NIE,0|10,4
-15,Higiena Cybernetyczna i Wycieki,Czy regularnie sprawdzasz czy Twoje dane wyciekły?,TAK|NIE,0|10,2
-16,Higiena Cybernetyczna i Wycieki,Czy korzystasz z dedykowanego menedżera haseł?,TAK|NIE,0|10,2
-17,Zaawansowane Powiązania,Czy Twoje dane figurują w publicznych rejestrach państwowych?,TAK|NIE,10|0,3
-18,Zaawansowane Powiązania,Czy jesteś abonentem domen zarejestrowanych bez ochrony WHOIS?,TAK|NIE,10|0,2
-19,Zaawansowane Powiązania,W jakim stopniu oddzielasz tożsamość służbową od prywatnej?,Całkowita separacja|Częściowe oddzielenie|Pełne mieszanie,0|5|10,3
-20,Zaawansowane Powiązania,Czy logujesz się do ważnych kont z otwartych sieci Wi-Fi bez VPN?,TAK|NIE,10|0,3
+1,Metryczka Wypełniającego,Podaj swój przedział wiekowy,10-13|14-17|18-24|25-34|35-44|45+,0|0|0|0|0|0,0
+2,Metryczka Wypełniającego,Płeć,Mężczyzna|Kobieta|Inna|Nie chcę podawać,0|0|0|0,0
+3,Metryczka Wypełniającego,Profil edukacyjny,Techniczny|Medyczny|Humanistyczny|Inny,0|0|0|0,0
+4,Media Społecznościowe i Świadomość,Jaka jest domyślna widoczność Twoich głównych profili w sieci?,Prywatne|Tylko znajomi znajomych|W pełni publiczne,0|5|10,4
+5,Media Społecznościowe i Świadomość,Czy publikujesz informacje o swojej lokalizacji w czasie rzeczywistym?,TAK|NIE,10|0,4
+6,Media Społecznościowe i Świadomość,Czy Twoja lista znajomych/kontaktów jest widoczna dla osób spoza tej listy?,TAK|NIE,10|0,2
+7,Media Społecznościowe i Świadomość,Czy kiedykolwiek opublikowałeś zdjęcie dokumentów?,TAK|NIE,10|0,4
+8,Metadane i Ślady Cyfrowe,Czy przed publikacją zdjęć w internecie usuwasz z nich metadane EXIF?,TAK|NIE,0|10,3
+9,Metadane i Ślady Cyfrowe,Jak zazwyczaj podchodzisz do zgód na pliki cookies na nowych stronach?,Odrzucam wszystko|Tylko niezbędne|Akceptuję wszystkie,0|5|10,1
+10,Metadane i Ślady Cyfrowe,Czy masz stale włączoną historię lokalizacji?,TAK|NIE,10|0,3
+11,Metadane i Ślady Cyfrowe,Ile posiadasz cyfrowego złomu (starych kont)?,Brak/Usuwam|Parę|Kilkadziesiąt,0|5|10,3
+12,Identyfikatory i PII,Jak łatwo jest znaleźć Twój główny numer telefonu w sieci?,Niemożliwe|Na podstronach firmowych|Pierwsza strona wyników,0|5|10,4
+13,Identyfikatory i PII,Jak łatwo jest znaleźć Twój prywatny adres e-mail w sieci?,Niemożliwe|Częściowo ukryty|Wszędzie widoczny,0|5|10,3
+14,Identyfikatory i PII,Czy Twój dokładny adres zamieszkania jest możliwy do powiązania z nazwiskiem?,TAK|NIE,10|0,4
+15,Identyfikatory i PII,Czy w sieci wisi Twoje szczegółowe CV?,TAK|NIE,10|0,2
+16,Higiena Cybernetyczna i Wycieki,Czy używasz tego samego hasła w więcej niż jednym serwisie?,Nigdy|Czasami|Zawsze,0|5|10,4
+17,Higiena Cybernetyczna i Wycieki,Czy masz włączone uwierzytelnianie 2FA na najważniejszych kontach?,TAK|NIE,0|10,4
+18,Higiena Cybernetyczna i Wycieki,"Czy regularnie sprawdzasz, czy Twoje dane wyciekły?",TAK|NIE,0|10,2
+19,Higiena Cybernetyczna i Wycieki,Czy korzystasz z dedykowanego menedżera haseł?,TAK|NIE,0|10,2
+20,Zaawansowane Powiązania,Czy Twoje dane figurują w publicznych rejestrach państwowych?,TAK|NIE,10|0,3
+21,Zaawansowane Powiązania,Czy jesteś abonentem domen zarejestrowanych bez ochrony WHOIS?,TAK|NIE,10|0,2
+22,Zaawansowane Powiązania,W jakim stopniu oddzielasz tożsamość służbową od prywatnej?,Całkowita separacja|Częściowe oddzielenie|Pełne mieszanie,0|5|10,3
+23,Zaawansowane Powiązania,Czy logujesz się do ważnych kont z otwartych sieci Wi-Fi bez VPN?,TAK|NIE,10|0,3

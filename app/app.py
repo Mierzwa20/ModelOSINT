@@ -93,7 +93,7 @@ def result():
     elif risk_percentage <= 75:
         level, color, desc = "Wysokie", "danger", "Poważne zagrożenie prywatności. Profil podatny na zautomatyzowane ataki."
     else:
-        level, color, desc = "Krytyczne", "dark", "Otwarta księga. Życie cyfrowe ofiary jest w pełni transparentne."
+        level, color, desc = "Krytyczne", "dark", "Otwarta księga. Życie cyfrowe osoby badanej jest w pełni transparentne."
         
     return render_template('result.html', score=risk_percentage, level=level, color=color, desc=desc)
 
