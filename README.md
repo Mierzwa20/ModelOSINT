@@ -36,7 +36,7 @@ Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cd
 
 ## Setup Instructions
 
-### Classic setup
+### Classic setup - usage without database
 
 1. Change into the `app` directory: `cd app`
 2. Ensure Python is installed on your system: `python3 --version` or `python --version`
@@ -46,7 +46,7 @@ Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cd
 6. Run the application: `python app.py`
 7. Open your browser and navigate to `http://127.0.0.1:5555/`
 
-### Docker
+### Docker - full setup with database [TODO]
 
 1. Ensure Docker is installed on your system: `docker --version`
 2. Make sure your current working directory is the root of this repository
