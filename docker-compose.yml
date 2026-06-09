@@ -43,14 +43,14 @@ services:
         condition: service_healthy
     command: ["up"]
 
-    cloudflared:
-      image: cloudflare/cloudflared:latest
-      restart: unless-stopped
-      environment:
-        - TUNNEL_TOKEN=${TUNNEL_TOKEN}
-      command: tunnel --no-autoupdate run
-      depends_on:
-        - python-app
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+    command: tunnel --no-autoupdate run
+    depends_on:
+      - python-app
 
 volumes:
   db_data:
