@@ -43,15 +43,24 @@ Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cd
 3. Create a Python virtual environment: `python3 -m venv .venv`
 4. Activate Python virtual environment: `source .venv/bin/activate`
 5. Install Flask: `pip install -r requirements.txt`
-6. Run the application: `python app.py`
-7. Open your browser and navigate to `http://127.0.0.1:5555/`
+6. Set environmental variables: `export FLASK_SECRET_KEY=Tw0j_b4rdz0_t4jny_i_dlu9i_klucz_s3syjny_123!@#`
+7. Run the application: `python app.py`
+8. Open your browser and navigate to `http://127.0.0.1:5555/`
 
-### Docker - full setup with database [TODO]
+### Docker - full setup with database
 
 1. Ensure Docker is installed on your system: `docker --version`
 2. Make sure your current working directory is the root of this repository
-3. Run the application: `docker compose up`
-4. Open your browser and navigate to `http://127.0.0.1:5555/`
+3. Set environmental variables in `.env` file:
+
+```
+POSTGRES_USER=testUser
+POSTGRES_PASSWORD=testPasswd
+FLASK_SECRET_KEY=Tw0j_b4rdz0_t4jny_i_dlu9i_klucz_s3syjny_123!@#
+```
+
+4. Run the application: `docker compose up`
+5. Open your browser and navigate to `http://127.0.0.1:5555/`
 
 ### Getting Results
 

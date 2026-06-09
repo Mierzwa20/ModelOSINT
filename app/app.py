@@ -7,7 +7,7 @@ import os
 DATABASE_URL = os.environ.get('DATABASE_URL')
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24) # Required for session state
+app.secret_key = os.environ.get('FLASK_SECRET_KEY')
 
 
 # Database Logic
