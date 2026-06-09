@@ -3,7 +3,7 @@ services:
   python-app:
     build: .
     ports:
-      - "5555:5555"
+      - "127.0.0.1:5555:5555"
     restart: unless-stopped
     environment:
       - DATABASE_URL=postgres://survey_app:${SURVEY_APP_PASSWORD}@db-app:5432/db-app?sslmode=disable
@@ -42,6 +42,15 @@ services:
       db-app:
         condition: service_healthy
     command: ["up"]
+
+    cloudflared:
+      image: cloudflare/cloudflared:latest
+      restart: unless-stopped
+      environment:
+        - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+      command: tunnel --no-autoupdate run
+      depends_on:
+        - python-app
 
 volumes:
   db_data:

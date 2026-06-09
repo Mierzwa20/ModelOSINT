@@ -58,6 +58,8 @@ POSTGRES_USER=testUser
 POSTGRES_PASSWORD=testPasswd
 FLASK_SECRET_KEY=Tw0j_b4rdz0_t4jny_i_dlu9i_klucz_s3syjny_123!@#
 SURVEY_APP_PASSWORD=ToHasloJestTylkoDlaUsera!
+# If you use Cloudflare Tunnel
+TUNNEL_TOKEN=eyJhIjoiYm...
 ```
 
 4. Run the application: `docker compose up`
