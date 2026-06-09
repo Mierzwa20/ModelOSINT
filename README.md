@@ -53,6 +53,36 @@ Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cd
 3. Run the application: `docker compose up`
 4. Open your browser and navigate to `http://127.0.0.1:5555/`
 
+### Getting Results
+
+1. `docker compose exec db-app psql -U {env_user} -d db-app`
+2. `{env_passwd}`
+3. Average score by education profile
+
+```SQL
+SELECT
+    s.education_profile AS education_profile,
+    ua.category AS category,
+    ROUND(AVG(ua.points_earned), 2) AS average_risk_points,
+    COUNT(DISTINCT s.id) AS submission_count
+FROM user_answers ua
+JOIN submissions s ON ua.submission_id = s.id
+GROUP BY s.education_profile, ua.category
+ORDER BY s.education_profile, average_risk_points DESC;
+```
+
+4. Average score by age group
+
+```SQL
+SELECT
+    age_group AS age_group,
+    ROUND(AVG(total_score), 2) AS average_total_score,
+    COUNT(*) AS sample_count
+FROM submissions
+GROUP BY age_group
+ORDER BY average_total_score DESC;
+```
+
 ## CI/CD Pipeline Trigger
 
 In this project, CI/CD is implemented using **GitHub Actions**. The pipeline is triggered by creating a new tag for release, following the naming convention `v*`.

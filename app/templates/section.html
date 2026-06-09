@@ -17,8 +17,12 @@
                     <div class="mt-2">
                         {% for opt_text, opt_points in q.options %}
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q_{{ q.id }}" id="q_{{ q.id }}_{{ loop.index }}" value="{{ opt_points }}" required>
-                            <label class="form-check-label" for="q_{{ q.id }}_{{ loop.index }}">
+                            <input class="form-check-input" type="radio" 
+                                   name="q_{{ q.id }}" 
+                                   id="q_{{ q.id }}_{{ loop.index0 }}" 
+                                   value="{{ loop.index0 }}" 
+                                   required>
+                            <label class="form-check-label" for="q_{{ q.id }}_{{ loop.index0 }}">
                                 {{ opt_text }}
                             </label>
                         </div>

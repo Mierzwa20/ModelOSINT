@@ -5,6 +5,10 @@ services:
     ports:
       - "5555:5555"
     restart: unless-stopped
+    environment:
+      - DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db-app:5432/db-app?sslmode=disable
+    depends_on:
+      - db-migrator
     command: ["python", "app.py"]
 
   # Postgres database
