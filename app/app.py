@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, abort
 import psycopg2
 from psycopg2.extras import execute_values
 import csv
@@ -7,7 +7,7 @@ import os
 DATABASE_URL = os.environ.get('DATABASE_URL')
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24) # Required for session state
+app.secret_key = os.environ.get('FLASK_SECRET_KEY')
 
 
 # Database Logic
@@ -122,20 +122,29 @@ def section(section_id):
         answers = session['answers']
         for q in questions:
             q_id = str(q['id'])
-            
+
             selected_idx_raw = request.form.get(f'q_{q_id}')
             
             if selected_idx_raw is not None:
-                selected_idx = int(selected_idx_raw)
-                
-                option_text, option_points = q['options'][selected_idx]
-                
-                answers[q_id] = {
-                    'category': current_category,
-                    'text': option_text,
-                    'points': option_points,
-                    'weight': q['weight']
-                }
+                try:
+                    selected_idx = int(selected_idx_raw)
+
+                    if selected_idx < 0 or selected_idx >= len(q['options']):
+                        raise ValueError("Index outside the range!")
+                    
+                    option_text, option_points = q['options'][selected_idx]
+                    
+                    answers[q_id] = {
+                        'category': current_category,
+                        'text': option_text,
+                        'points': option_points,
+                        'weight': q['weight']
+                    }
+                except(ValueError, TypeError):
+                    abort(400, description="Incorect form data detected")
+            
+            else:
+                abort(400, description="No answaer provided")
             
         session['answers'] = answers 
         session.modified = True
