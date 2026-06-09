@@ -53,10 +53,11 @@ Risk(\%) = \left( \frac{\sum_{i=1}^{20} (P_i \cdot W_i)}{\sum_{i=1}^{20} (10 \cd
 2. Make sure your current working directory is the root of this repository
 3. Set environmental variables in `.env` file:
 
-```
+```bash
 POSTGRES_USER=testUser
 POSTGRES_PASSWORD=testPasswd
 FLASK_SECRET_KEY=Tw0j_b4rdz0_t4jny_i_dlu9i_klucz_s3syjny_123!@#
+SURVEY_APP_PASSWORD=ToHasloJestTylkoDlaUsera!
 ```
 
 4. Run the application: `docker compose up`
